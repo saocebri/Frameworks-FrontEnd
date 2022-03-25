@@ -5,11 +5,9 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './property-binding.component.html',
   styleUrls: ['./property-binding.component.css']
 })
-export class PropertyBindingComponent implements OnInit {
+export class PropertyBindingComponent {
+  //Vamos Criar as propriedades para o data binding interpolation
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  x: number = 25
 
 }
