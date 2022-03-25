@@ -15,6 +15,9 @@ import { HomeComponent } from './home/home.component';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
+import { CInputFilhoComponent } from './c-input-filho/c-input-filho.component';
+import { CPaiComponent } from './c-pai/c-pai.component';
+import { OutputComponent } from './output/output.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +27,9 @@ import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.compon
     PropertyBindingComponent,
     EventBindingComponent,
     TwoWayBindingComponent,
+    CInputFilhoComponent,
+    CPaiComponent,
+    OutputComponent,
   ],
   imports: [
     BrowserModule,
