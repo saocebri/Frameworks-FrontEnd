@@ -1,0 +1,31 @@
+<div class="content">
+    <h2>{{subtitulo}}</h2>
+
+    <ul style="list-style:none">
+        <li *ngFor="let i of fimes">
+            <strong style="color:#ff1493"> Titulo: </strong>{{i.titulo}} - <strong style="color:#ff1493"> Direção:
+            </strong>{{i.direcao}}<br><br>
+    </ul>
+</div>
+
+<div class="content">
+    <table class="bordaTabela">
+
+        <thead>
+
+            <th>Titulo</th>
+            <th>Direção</th>
+            <th>Elenco</th>
+            <th>Ano de Lançamento</th>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let j of fimes">
+                <td>{{j.titulo}}</td>
+                <td>{{j.direcao}}</td>
+                <td>{{j.elenco}}</td>
+                <td>{{j.anoLancamento}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

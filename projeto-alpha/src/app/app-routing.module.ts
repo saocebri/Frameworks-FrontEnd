@@ -7,6 +7,12 @@ import { PropertyBindingComponent } from './property-binding/property-binding.co
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component'
 import { CPaiComponent } from './c-pai/c-pai.component';
+import { NgIfComponent } from './ng-if/ng-if.component';
+import { NgForComponent } from './ng-for/ng-for.component';
+import { NgClassComponent } from './ng-class/ng-class.component';
+import { NgStyleComponent } from './ng-style/ng-style.component';
+import { PipeComponent } from './pipe/pipe.component';
+
 
 
 
@@ -17,7 +23,12 @@ const routes: Routes = [
   { path: 'propb', component: PropertyBindingComponent },
   { path: 'eventb', component: EventBindingComponent },
   { path: 'two-way', component: TwoWayBindingComponent },
-  { path: 'pai', component: CPaiComponent }
+  { path: 'pai', component: CPaiComponent },
+  { path: 'if', component: NgIfComponent },
+  {path: 'for', component: NgForComponent},
+  { path:'class', component: NgClassComponent},
+  {path:'style', component:NgStyleComponent},
+  {path:'pipe', component:PipeComponent}
 
 
 
