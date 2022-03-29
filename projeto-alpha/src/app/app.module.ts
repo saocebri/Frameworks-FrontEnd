@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 //Importando o módulo Forms
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 //Importando nossos components
@@ -27,7 +27,8 @@ import { PipeComponent } from './pipe/pipe.component';
 import { LOCALE_ID, DEFAULT_CURRENCY_CODE } from '@angular/core';
 import localePt from '@angular/common/locales/pt-PT';
 import { registerLocaleData } from '@angular/common';
-import {RaizQuadrada} from './pipe-personalizado/pipe-raiz-quadrada'
+import {RaizQuadrada} from './pipe-personalizado/pipe-raiz-quadrada';
+import { FormularioComponent } from './formulario/formulario.component'
 
 registerLocaleData(localePt, 'pt')
 
@@ -49,11 +50,13 @@ registerLocaleData(localePt, 'pt')
     AlterarTextoDirective,
     PipeComponent,
     RaizQuadrada,
+    FormularioComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule
   ],
   providers: [{
     provide:LOCALE_ID,

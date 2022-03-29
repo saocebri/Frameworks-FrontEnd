@@ -12,6 +12,7 @@ import { NgForComponent } from './ng-for/ng-for.component';
 import { NgClassComponent } from './ng-class/ng-class.component';
 import { NgStyleComponent } from './ng-style/ng-style.component';
 import { PipeComponent } from './pipe/pipe.component';
+import { FormularioComponent } from './formulario/formulario.component';
 
 
 
@@ -28,7 +29,8 @@ const routes: Routes = [
   {path: 'for', component: NgForComponent},
   { path:'class', component: NgClassComponent},
   {path:'style', component:NgStyleComponent},
-  {path:'pipe', component:PipeComponent}
+  {path:'pipe', component:PipeComponent},
+  {path:'forms', component:FormularioComponent}
 
 
 

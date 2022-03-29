@@ -1,0 +1,26 @@
+<p>formulario works!</p>
+<!--
+<div class="content">
+    <form #capturaDados="ngForm" (ngSubmit)="recebedorDados(capturaDados.value)">
+        <input type="email" name="email" placeholder="informe seu mail" ngModel>
+        <br>
+        <input type="password" name="senha" placeholder="informe sua senha" ngModel>
+        <br>
+        <input type="submit" value="Enviar Dados">
+
+    </form>
+</div>
+-->
+<hr>
+
+<div class="content">
+    <form [formGroup]="dataForm" (ngSubmit)="exibirDados(dataForm.value)">
+        <input type="email" name="email" placeholder="informe seu mail" formControlName="email">
+        <input type="password" name="senha" placeholder="informe sua senha" formControlName="senha">
+        <input type="submit" [disabled]="!dataForm.valid" value="Enviar dados">
+    </form>
+
+    <!--Aqui será exibido o valor da propriedadde name-->
+    <p>o Email informado é: {{email}}</p>
+
+</div>
